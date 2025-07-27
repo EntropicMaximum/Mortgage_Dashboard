@@ -130,7 +130,7 @@ def main():
     years = st.slider("Loan Duration (years)", 1, 30, 24)
     extra_before = st.slider("Monthly Extra Before Refi", 0, 2_000, 500, step=100)
     extra_after = st.slider("Monthly Extra After Refi", 0, 2_000, 1_000, step=100)
-    lump_month = st.slider("Lump Sum Month", 1, years * 12, 1)
+    lump_month = st.slider("Lump Sum Month", 0, years * 12, 1)
     lump_amount = st.slider("Lump Sum Amount", 0.0, 500_000.0, 300_000.0,
                             step=5_000.0)
 
